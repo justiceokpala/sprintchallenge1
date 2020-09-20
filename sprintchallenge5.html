@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sprintchallenge5</title>
+</head>
+<body>
+    <h1>sprintchallenge5</h1>
+
+    <script>
+        let number = parseInt(prompt("Please enter your favorite number"));
+let sum = 0;
+let product = 1;
+let action = prompt("To compute sum, please type 'A' or press any other number to compute product");
+for (let i = 1; i <= number; i++) {
+  if (action == "A") {
+    sum = sum + i
+    document.write(`The sum of user input at ${i} is ${sum}`)
+  } else {
+    product = product * i
+    document.write(`The product of user input at ${i} is ${product}`)
+  }
+}
+    </script>
+</body>
+</html>
